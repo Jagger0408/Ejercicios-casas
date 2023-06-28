@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CategoriasFamiliares {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingrese una categoría (a, b o c):");
+        String categoria = sc.nextLine();
+
+        if (categoria.equalsIgnoreCase("a")) {
+            System.out.println("La categoría ingresada corresponde a 'hijo'.");
+        } else if (categoria.equalsIgnoreCase("b")) {
+            System.out.println("La categoría ingresada corresponde a 'padres'.");
+        } else if (categoria.equalsIgnoreCase("c")) {
+            System.out.println("La categoría ingresada corresponde a 'abuelos'.");
+        } else {
+            System.out.println("La categoría ingresada es inválida.");
+        }
+    }
+}
