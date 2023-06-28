@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class JuegoPiedraPapelTijera {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Competidor 1: Ingrese su elección (0: piedra, 1: papel, 2: tijera):");
+        int eleccionCompetidor1 = sc.nextInt();
+
+        System.out.println("Competidor 2: Ingrese su elección (0: piedra, 1: papel, 2: tijera):");
+        int eleccionCompetidor2 = sc.nextInt();
+
+        if (eleccionCompetidor1 == eleccionCompetidor2) {
+            System.out.println("¡Es un empate!");
+        } else if ((eleccionCompetidor1 == 0 && eleccionCompetidor2 == 2) ||
+                (eleccionCompetidor1 == 1 && eleccionCompetidor2 == 0) ||
+                (eleccionCompetidor1 == 2 && eleccionCompetidor2 == 1)) {
+            System.out.println("¡Competidor 1 es el ganador!");
+        } else {
+            System.out.println("¡Competidor 2 es el ganador!");
+        }
+    }
+}
