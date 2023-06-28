@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class DeterminarCurso {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingrese el número de curso:");
+        int curso = sc.nextInt();
+
+        if (curso == 0) {
+            System.out.println("El curso corresponde a 'jardín de infantes'.");
+        } else {
+            if (curso >= 1 && curso <= 6) {
+                System.out.println("El curso corresponde a 'primaria'.");
+            } else {
+                if (curso >= 7 && curso <= 12) {
+                    System.out.println("El curso corresponde a 'secundaria'.");
+                } else {
+                    System.out.println("El número de curso ingresado es inválido.");
+                }
+            }
+        }
+    }
+}
