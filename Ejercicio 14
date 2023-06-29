@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class PuestosTorneo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingrese el puesto del participante:");
+        int puesto = sc.nextInt();
+
+        switch (puesto) {
+            case 1:
+                System.out.println("El primer puesto obtiene la medalla de oro.");
+                break;
+            case 2:
+                System.out.println("El segundo puesto obtiene la medalla de plata.");
+                break;
+            case 3:
+                System.out.println("El tercer puesto obtiene la medalla de bronce.");
+                break;
+            default:
+                System.out.println("Siga participando.");
+                break;
+        }
+    }
+}
